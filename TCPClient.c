@@ -48,7 +48,7 @@ int main() {
         fwrite(buffer, 1, bytes_received, file);
         filesize -= bytes_received;
     }
-
+    printf("transfer complete");
     fclose(file);
     close(sock);
     return 0;
