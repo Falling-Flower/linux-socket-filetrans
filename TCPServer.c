@@ -66,6 +66,7 @@ int main() {
         if (bytes_read > 0) {
             send(new_socket, buffer, bytes_read, 0);
         } else {
+            printf("transfer complete");
             break;  // 文件结束
         }
     }
